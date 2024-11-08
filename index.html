@@ -73,8 +73,28 @@ margin-top: -100px;
 max-width: 60%;
 height: auto;
 }
+
+@keyframes appear{
+  from{ 
+   opacity: 0;
+   scale: 0.5;
+  }
+   to {
+   opacity: 1.5;
+   scale: 1;
+  }
+}
+
+.appear{
+ animation: appear linear;
+ animation-timeline: view();
+ animation-range: entery 0 cover
+ 70%;
+}
 </style>   
 </head>
+
+
 <body>
   <div class="image1">
    <img src="https://files.worldwildlife.org/wwfcmsprod/images/Woman_drinking_water_SpringMag2017__Karine_Aigner/magazine_hero/4r2mj2rqzc_WWF_NEPAL_4O1A2684_small.jpg">
@@ -83,27 +103,34 @@ height: auto;
       <p>running low<p>
     </div>
  </div>
- 
 
+ 
+<div class="appear">
   <div class="title">
   <center>
    <p style:"monospace">Welcome to Nepal Water For Health Foundation support page</p>
   </center>
   </div>
+</div>
 
+<div class="appear">
  <center>
   <div class="textstyle">
    <p> Where we show the Nepalese people in need for fresh drinking water</p>
   </div>
  </center>
+</div>
 
-<div class="section">
+<div class="appear">
+ <div class="section">
   <div class="image2">
-  <img src="https://www.unicef.org/turkiye/sites/unicef.org.turkiye/files/styles/press_release_feature/public/UNICEF%3AUN017117%3AShrestha.jpg.webp?itok=ikhHYA0N"
-  <p>Nepal has a severe water crisis that poses a significant threat to the health and well-being of its people. With only 1,100 cubic meters of freshwater available for the general population, many communities struggle to access safe drinking water because of the geographic terrain and climate of Nepal. According to UNICEF, over 5 million people in Nepal lack access to improved drinking water sources, leading to a rise in waterborne diseases like cholera and dysentery. The scarcity of clean water not only endangers health but also effects existing macroeconomic challenges. Children (often the most affected) miss school due to illness, which hampers their education and future careers. Furthermore, women/girls are frequently tasked with fetching water, limiting their opportunities for education and economic participation because of the patriarchy beliefs. As the climate continues to change, glaciers—the primary water source for many communities—are rapidly melting, further threatening a water source. </p>
+   <img src="https://www.unicef.org/turkiye/sites/unicef.org.turkiye/files/styles/press_release_feature/public/UNICEF%3AUN017117%3AShrestha.jpg.webp?itok=ikhHYA0N"
+   <p>Nepal has a severe water crisis that poses a significant threat to the health and well-being of its people. With only 1,100 cubic meters of freshwater available for the general population, many communities struggle to access safe drinking water because of the geographic terrain and climate of Nepal. According to UNICEF, over 5 million people in Nepal lack access to improved drinking water sources, leading to a rise in waterborne diseases like cholera and dysentery. The scarcity of clean water not only endangers health but also effects existing macroeconomic challenges. Children (often the most affected) miss school due to illness, which hampers their education and future careers. Furthermore, women/girls are frequently tasked with fetching water, limiting their opportunities for education and economic participation because of the patriarchy beliefs. As the climate continues to change, glaciers—the primary water source for many communities—are rapidly melting, further threatening a water source. </p>
+  </div>
  </div>
- </div>
+</div>
 
+<div class="appear">
  <div class="section">
   <div class="title">
   <center>
@@ -111,7 +138,9 @@ height: auto;
   </center>
   </div>
  </div>
+</div>
 
+<div class="appear">
  <div class="section">
   <center>
     <div class="image3">
@@ -121,6 +150,7 @@ height: auto;
       <button class="button" type="button" onclick="location.href='https://newah.org.np/donate-us'">Donate here!</button>
   </center>
  </div>
+</div>
  
 
 </body>
